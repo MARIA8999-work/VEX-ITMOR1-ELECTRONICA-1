@@ -12,7 +12,7 @@ from vl53l0x import setup_tofl_device, TBOOT
 i2c = machine.I2C(0, scl=machine.Pin(1), sda=machine.Pin(0), freq=400000)
 oled = ssd1306.SSD1306_I2C(128, 64, i2c)
 pixel = neopixel.NeoPixel(machine.Pin(16), 1)
-selector_pin = machine.Pin(6, machine.Pin.IN)
+selector_pin = machine.Pin(10, machine.Pin.IN)
 signal_pin = machine.Pin(7, machine.Pin.IN)
 device_1_xshut = machine.Pin(15, machine.Pin.OUT)
 
